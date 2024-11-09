@@ -14,3 +14,9 @@ jobs:
       - run: pnpm biome ci
       - run: pnpm test
       - run: pnpm build
+      - run: pnpm test:coverage
+      - uses: codecov/codecov-action@v4
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: coverage/clover.xml
+          verbose: true
