@@ -68,7 +68,9 @@ For example, by setting `.prettierrc` as follows, you can sort classes even in f
 
 ## Options
 
-### `regex`
+### `regex` 
+
+**default:** `class="([^"]*)"`
 
 The `regex` option allows you to specify the part that corresponds to the value of the class attribute using a regular expression.
 
