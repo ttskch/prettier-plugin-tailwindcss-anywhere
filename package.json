@@ -9,12 +9,12 @@
   },
   "packageManager": "pnpm@9.12.3",
   "main": "dist/src/index.js",
-  "files": ["dist", "src"],
   "exports": {
     ".": {
       "import": "./dist/src/index.js"
     }
   },
+  "files": ["dist", "src"],
   "dependencies": {
     "tslib": "~2.7"
   },

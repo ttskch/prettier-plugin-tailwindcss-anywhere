@@ -1,6 +1,6 @@
 import { format } from "prettier";
 import { describe, expect, it } from "vitest";
-import * as plugin from "../../src/index";
+import * as plugin from "../../src/index.js";
 
 describe("index", () => {
   it("without options", async () => {
