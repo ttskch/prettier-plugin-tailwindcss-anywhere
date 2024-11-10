@@ -52,7 +52,7 @@ export const options: Record<string, SupportOption> = {
   regex: {
     type: "string",
     category: "Anywhere",
-    default: 'class="([^{}"]*)"',
+    default: 'class="([^"]*)"',
     description: "regex to match class attribute",
   },
 };
