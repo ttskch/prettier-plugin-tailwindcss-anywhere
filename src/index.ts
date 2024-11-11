@@ -7,6 +7,7 @@ import type {
 } from "prettier";
 import { parse } from "./parser.js";
 import { print } from "./printer.js";
+import type { AnywhereNode } from "./types.js";
 
 /**
  * @see https://prettier.io/docs/en/plugins#languages
@@ -15,7 +16,6 @@ export const languages: Partial<SupportLanguage>[] = [
   {
     name: "Any HTML-like Languages",
     parsers: ["anywhere"],
-    aceMode: "text",
   },
 ];
 
@@ -26,13 +26,8 @@ export const parsers: Record<string, Parser> = {
   anywhere: {
     parse,
     astFormat: "anywhere",
-    // there's only a single node
-    locStart(node) {
-      return node.start;
-    },
-    locEnd(node) {
-      return node.end;
-    },
+    locStart: (node: AnywhereNode) => node.start,
+    locEnd: (node: AnywhereNode) => node.end,
   },
 };
 
@@ -51,7 +46,7 @@ export const printers: Record<string, Printer> = {
 export const options: Record<string, SupportOption> = {
   regex: {
     type: "string",
-    category: "Anywhere",
+    category: "Format",
     default: 'class="([^"]*)"',
     description: "regex to match class attribute",
   },

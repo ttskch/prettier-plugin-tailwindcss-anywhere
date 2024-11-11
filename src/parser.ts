@@ -1,14 +1,6 @@
-import type { ParserOptions } from "prettier";
-import { format } from "prettier";
+import { type ParserOptions, format } from "prettier";
 import * as prettierPluginTailwindcss from "prettier-plugin-tailwindcss";
-
-type AnywhereNode = {
-  type: "anywhere";
-  body: string;
-  source: string;
-  start: number;
-  end: number;
-};
+import type { AnywhereNode } from "./types.js";
 
 export const parse = async (
   text: string,
@@ -42,10 +34,8 @@ export const parse = async (
   }
 
   return {
-    type: "anywhere",
     body: formattedText,
-    end: text.length,
-    source: text,
     start: 0,
+    end: text.length,
   };
 };
