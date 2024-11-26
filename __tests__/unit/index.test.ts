@@ -33,4 +33,19 @@ describe("index", () => {
       "{% block foo %}<div class="ms-auto flex items-center gap-[1.5rem] {% if buz %}is-buz{% endif %}">{{ bar }}</div>{% endblock %}"
     `);
   });
+
+  it("repeating classes", async () => {
+    const result = await format(
+      `<div class="p-0 container m-0"></div><div class="p-0 container m-0"></div><div class="p-0 container m-0"></div>`,
+      {
+        parser: "anywhere",
+        // @ts-ignore
+        plugins: [plugin],
+      },
+    );
+
+    expect(result).toMatchInlineSnapshot(`
+      "<div class="container m-0 p-0"></div><div class="container m-0 p-0"></div><div class="container m-0 p-0"></div>"
+    `);
+  });
 });

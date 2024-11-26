@@ -30,7 +30,7 @@ export const parse = async (
   }
 
   for (const [original, fixed] of map) {
-    formattedText = formattedText.replace(original, fixed);
+    formattedText = formattedText.replaceAll(original, fixed);
   }
 
   return {
