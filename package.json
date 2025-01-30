@@ -7,7 +7,6 @@
   "engines": {
     "node": ">= 20.9 < 23"
   },
-  "packageManager": "pnpm@9.12.3",
   "main": "dist/index.js",
   "exports": {
     ".": {
