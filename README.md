@@ -7,6 +7,10 @@
 
 A Prettier plugin for sorting TailwindCSS classes **in any HTML-like language, like Twig etc**⚡
 
+## Requirements
+
+* Node: `>= 20.9 < 23`
+
 ## Installation
 
 ```shell
