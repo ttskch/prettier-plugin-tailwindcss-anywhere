@@ -1,0 +1,4 @@
+if [[ -n `git diff --cached -G '"version":' --numstat package.json` ]] && ([[ `git diff --cached -G '"version":' --numstat package.json | awk '{print $1}'` -ne 1 ]] || [[ `git diff --cached --name-only | wc -l` -ne 1 ]]); then
+  echo "\033[30;41m\n\n[Error] Don't commit a change to the \"version\" field in package.json along with other changes.\033[m\n\n";
+  exit 1;
+fi
