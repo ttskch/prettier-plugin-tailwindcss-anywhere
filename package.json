@@ -50,5 +50,10 @@
     "test:watch": "vitest unit"
   },
   "author": "Takashi Kanemoto <ttskch@gmail.com>",
+  "homepage": "https://github.com/ttskch/prettier-plugin-tailwindcss-anywhere",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/ttskch/prettier-plugin-tailwindcss-anywhere"
+  },
   "license": "MIT"
 }
