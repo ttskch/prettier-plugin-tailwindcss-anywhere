@@ -5,7 +5,7 @@
   "keywords": ["prettier", "tailwindcss", "formatter", "html", "twig"],
   "type": "module",
   "engines": {
-    "node": ">= 20.9 < 23"
+    "node": ">= 20.9 < 24"
   },
   "main": "dist/index.js",
   "exports": {
