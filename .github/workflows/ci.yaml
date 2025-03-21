@@ -7,7 +7,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [20, 21, 22]
+        node: [20, 21, 22, 23]
 
     runs-on: ${{ matrix.os }}
 
@@ -26,7 +26,9 @@ jobs:
       - run: pnpm test
       - run: pnpm build
       - run: pnpm test:coverage
+        if: ${{ matrix.node == 23 }}
       - uses: codecov/codecov-action@v4
+        if: ${{ matrix.node == 23 }}
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: coverage/clover.xml
