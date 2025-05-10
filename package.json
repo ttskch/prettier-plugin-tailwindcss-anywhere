@@ -7,7 +7,7 @@
   "engines": {
     "node": ">= 20.9 < 24"
   },
-  "main": "dist/index.js",
+  "main": "./dist/index.js",
   "exports": "./dist/index.js",
   "files": ["dist", "src"],
   "dependencies": {
