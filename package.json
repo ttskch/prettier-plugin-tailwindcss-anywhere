@@ -8,13 +8,7 @@
     "node": ">= 20.9 < 24"
   },
   "main": "dist/index.js",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "node": "./dist/index.js"
-    }
-  },
+  "exports": "./dist/index.js",
   "files": ["dist", "src"],
   "dependencies": {
     "tslib": "~2.7"
