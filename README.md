@@ -9,7 +9,7 @@ A Prettier plugin for sorting TailwindCSS classes **in any HTML-like language, l
 
 ## Requirements
 
-* Node: `>= 20.9 < 24`
+* Node: `>= 20.9 < 25`
 
 ## Installation
 
