@@ -49,7 +49,7 @@
   "homepage": "https://github.com/ttskch/prettier-plugin-tailwindcss-anywhere",
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com/ttskch/prettier-plugin-tailwindcss-anywhere"
+    "url": "git+https://github.com/ttskch/prettier-plugin-tailwindcss-anywhere.git"
   },
   "license": "MIT"
 }
