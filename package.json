@@ -47,6 +47,7 @@
   },
   "author": "Takashi Kanemoto <ttskch@gmail.com>",
   "homepage": "https://github.com/ttskch/prettier-plugin-tailwindcss-anywhere",
+  "bugs": "https://github.com/ttskch/prettier-plugin-tailwindcss-anywhere/issues",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ttskch/prettier-plugin-tailwindcss-anywhere.git"
