@@ -51,5 +51,6 @@
     "type": "git",
     "url": "ssh://git@github.com/ttskch/prettier-plugin-tailwindcss-anywhere"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "packageManager": "pnpm@10.30.3"
 }
